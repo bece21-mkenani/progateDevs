@@ -1,3 +1,5 @@
+
+
 :root {
     --primary-color: #09244b;
     --secondary-color: #046669;
@@ -9,7 +11,15 @@
     --paragraph-dim-color: #acacac;
     --hover-color: lab(84.22% 0.59 84.2);
 }
-
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 body { 
     background: var(--body-color);
     color: var(--text-color);
@@ -231,7 +241,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;        
+    width: 100%; 
     z-index: 1000;
     background: var(--primary-color); 
 }
@@ -324,7 +334,7 @@ header {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* ==============Mobile Navigation (Slide in effect)============= */
+/* ==============Mobile Navigation============ */
 @media (max-width: 768px) {
     .hero-content{
         padding-top:45px;
@@ -349,7 +359,7 @@ header {
         align-items:center;
         z-index: 999;
         height:100vh;
-    }
+ }
     .nav-links.active {
         transform: translateX(0); 
     }
