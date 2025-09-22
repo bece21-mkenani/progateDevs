@@ -425,6 +425,10 @@ footer {
     text-decoration: none;
 }
 
+.footer-content .social-links {
+    margin: 12px 0;
+}
+
 /*-============== Fade-in Animation =============- */
 .fade-in {
     animation: fadeIn 1s ease-in;

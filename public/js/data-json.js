@@ -29,15 +29,15 @@ export const servicesSection = [
 export const socials = [
     {
         socialLink: '../',
-        socialName: 'Facebook'
+        socialName: '<i class="fa-brands fa-square-facebook fa-lg"></i>'
     },{
         socialLink: '../',
-        socialName: 'LinkedIn'
+        socialName: '<i class="fa-brands fa-square-linkedin fa-lg"></i>'
     },{
         socialLink: '../',
-        socialName: 'WhatsApp'
+        socialName: '<i class="fa-brands fa-square-whatsapp fa-lg"></i>'
     },{
         socialLink: 'https://x.com/progatedevsmw',
-        socialName: 'X'
+        socialName: '<i class="fa-brands fa-square-x-twitter fa-lg"></i>'
     }
 ];
