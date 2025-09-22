@@ -147,6 +147,13 @@ body {
     margin:20px;
 }
 
+.service-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
 .services p,
 .team p,
 .service-card p,
@@ -416,6 +423,10 @@ footer {
     color: var(--accent-color);
     margin: 0 10px;
     text-decoration: none;
+}
+
+.footer-content .social-links {
+    margin: 12px 0;
 }
 
 /*-============== Fade-in Animation =============- */
