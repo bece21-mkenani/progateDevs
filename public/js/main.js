@@ -1,3 +1,4 @@
+import { Toast } from "./toast.js";
 
 // ------Mobile Menu Functionality
 function initMobileMenu() {
@@ -48,6 +49,7 @@ document.head.appendChild(style);
 
 document.addEventListener('DOMContentLoaded', initMobileMenu);
 
+const toast = new Toast();
 //----getting user form data =========
 const form = document.getElementById('contactForm');
 form.addEventListener('submit', async (e) => {
@@ -60,13 +62,13 @@ form.addEventListener('submit', async (e) => {
                 body: new URLSearchParams(formData)
             });
             if (response.ok) {
-                alert('Message sent successfully!');
+                toast.show('Message sent successfully!', 'success');
                 form.reset();
             } else {
-                alert('Error sending message. Try again.');
+                toast.show('Error sending message. Try again.', 'error');
             }
         } catch (error) {
-            alert('Network error. Please check your connection.');
+            toast.show('Network error. Please check your connection.', 'error');
         }
     }
 });
