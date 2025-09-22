@@ -1,97 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progate Malawi Developers</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
 
-<%- include('partials/header') %>
+    <%- include('partials/header') %>
 
-<main>
-    <section class="hero" id="home">
-<div class="hero-content">
-    <h1 class="hero-title">Empowering Your Digital Journey</h1>
-    <p class="hero-subtitle">
-        We are a team of three passionate developers ready to  bring your ideas to life with cutting-edge, We offer
-    </p>
+        <main>
+            <section class="hero" id="home">
+                <div class="hero-content">
+                    <h1 class="hero-title">Empowering Your Digital Journey</h1>
+                    <p class="hero-subtitle">
+                        We are a team of three passionate developers ready to bring your ideas to life with
+                        cutting-edge, We offer
+                    </p>
 
-    <div class="services-animation">
-        <span id="typed-service"></span>
-        <span class="caret">|</span>
-    </div>
+                    <div class="services-animation">
+                        <span id="typed-service"></span>
+                        <span class="caret">|</span>
+                    </div>
 
-    <a href="#contact-form" class="cta-button">Get Started</a>
-</div>
+                    <a href="#contact-form" class="cta-button">Get Started</a>
+                </div>
 
-    </section>
-    <section class="services" id="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Web Development</h3>
-                <p>Custom websites tailored to your needs, built with modern technologies.</p>
-            </div>
-            <div class="service-card">
-                <h3>Mobile App Development</h3>
-                <p>Intuitive apps for iOS and Android to engage your users on the go.</p>
-            </div>
-            <div class="service-card">
-                <h3>ICT Consultancy</h3>
-                <p>Expert advice to optimize your tech infrastructure and strategies.</p>
-            </div>
-            <div class="service-card">
-                <h3>Student Project Assistance</h3>
-                <p>Helping students with school projects and hands-on guidance.</p>
-            </div>
-            <div class="service-card">
-                <h3>Software Training</h3>
-                <p>Learn essential tools like Word, Excel, and other software suites.</p>
-            </div>
-            <div class="service-card">
-                <h3>Networking Skills</h3>
-                <p>Training and solutions for robust networking setups.</p>
-            </div>
-        </div>
-    </section>
-    <section class="team" id="team">
-        <h2>Meet the Team</h2>
-        <div class="team-grid">
-            <div class="team-member">
-                <img src="/images/2Kay.jpg" alt="Team Member 1" class="team-photo">
-                <h3>Kelvin KAY Katoya</h3>
-                <p>Expert in web and mobile dev.</p>
-            </div>
-            <div class="team-member">
-                <img src="/images/geog.jpg" alt="Team Member 2" class="team-photo">
-                <h3>George</h3>
-                <p>Specialist in ICT and training.</p>
-            </div>
-            <div class="team-member">
-                <img src="/images/kenani.jpg" alt="Team Member 3" class="team-photo">
-                <h3>Kenani</h3>
-                <p>Networking and project guru.</p>
-            </div>
-        </div>
-    </section>
-<section class="contact" id="contact-form">
-  <h2>Reach Out to Us</h2>
-  <p>Send us your email and message directly from here<br> We're excited to hear from you!</p>
-  
-  <form id="contactForm" action="/contact" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit" class="cta-button">Send Message</button>
-  </form>
-</section>
+            </section>
+            <section class="services" id="services">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <!-- everything that is services will be generated here on npm start rendering chnai chani -->
+                </div>
+            </section>
+            <section class="team" id="team">
+                <h2>Meet the Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="/images/2Kay.jpg" alt="Team Member 1" class="team-photo">
+                        <h3>Kelvin KAY Katoya</h3>
+                        <p>Expert in web and mobile dev.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/images/geog.jpg" alt="Team Member 2" class="team-photo">
+                        <h3>George</h3>
+                        <p>Specialist in ICT and training.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="/images/kenani.jpg" alt="Team Member 3" class="team-photo">
+                        <h3>Kenani</h3>
+                        <p>Networking and project guru.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contact-form">
+                <h2>Reach Out to Us</h2>
+                <p>Send us your email and message directly from here<br> We're excited to hear from you!</p>
 
-</main>
+                <form id="contactForm" action="/contact" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </section>
 
-<%- include('partials/footer') %>
+        </main>
 
-<script src="/js/main.js"></script>
+        <%- include('partials/footer') %>
+
+            <script type="module" src="/js/home-page.js"></script>
+            <script type="module" src="/js/footer.js"></script>
+            <script src="/js/main.js"></script>
 </body>
+
 </html>
