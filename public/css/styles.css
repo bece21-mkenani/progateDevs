@@ -147,6 +147,13 @@ body {
     margin:20px;
 }
 
+.service-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
 .services p,
 .team p,
 .service-card p,
