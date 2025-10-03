@@ -5,6 +5,8 @@ const nodemailer = require('nodemailer');
 
 router.get('/', (req, res) => res.render('index'));
 
+router.get('/about', (req, res) => res.render('about'));
+
 router.post('/contact', async (req, res) => {
     const { name, email, message } = req.body;
     let transporter = nodemailer.createTransport({

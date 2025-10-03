@@ -1,2 +1,5 @@
 node_modules
 .env
+
+# i added an offline fontawesome package fpr offline development
+/public/css/fontawesome-free-6.6.0-web

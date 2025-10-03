@@ -32,7 +32,7 @@ export const socials = [
         socialName: '<i class="fa-brands fa-square-facebook fa-lg"></i>'
     },{
         socialLink: '../',
-        socialName: '<i class="fa-brands fa-square-linkedin fa-lg"></i>'
+        socialName: '<i class="fab fa-linkedin fa-lg"></i>'
     },{
         socialLink: '../',
         socialName: '<i class="fa-brands fa-square-whatsapp fa-lg"></i>'
