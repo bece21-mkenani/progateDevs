@@ -586,29 +586,59 @@ div.about-us-bar {
 }
 
 .who-image img {
-    /* width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-text-align: center;
-    align-items: center;
-    justify-content: center;
-    /* width: 100%; 
-    max-width: 1560px;
-    /* border-radius: 8px; *
-    box-shadow: 0 12px 30px rgba(12, 20, 40, 0.18); 
-    /* width: 60%; *
-    height: auto;
-    border-radius: 5%;
-    object-fit: cover;
-    margin-bottom: 30px; */
-    width:100%; max-width:560px; border-radius:8px; box-shadow:0 12px 30px rgba(12,20,40,0.18);
+    width: 100%;
+    max-width: 560px;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(12, 20, 40, 0.18);
 }
 
+/* about vision stuff */
 
+.vision-mission {
+    background: var(--accent-color);
+    padding: 4rem 1rem;
+    text-align: center;
+}
 
+.vision-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
 
+.vision-card {
+    background: var(--primary-color);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vision-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.vision-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.vision-h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--hover-color);
+}
+
+.vision-p {
+    color: var(--paragraph-dim-color);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
 
 
 /* ========= Footer ======= */

@@ -9,32 +9,41 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-    <body>
+
+<body>
 
     <%- include('partials/header') %>
 
-    <main>
+        <main>
             <section class="about-us-hero">
                 <div class="about-us-hero-content">
                     <h1 class="about-us-h1">Build. Inovate. Deliver</h1>
                     <span class="about-us-bar"></span>
                     <p class="about-us-sub">
-                        From full-stack web apps to AI-driven solutions, we create software that works. Along the way, we also help the next generation of developers get started
+                        From full-stack web apps to AI-driven solutions, we create software that works. Along the way,
+                        we also help the next generation of developers get started
                     </p>
                     <a href="index.ejs#contact-form" class="cta-button">Build With Us</a>
                 </div>
             </section>
-
             <section class="who-are-we">
                 <div class="who-content">
-                    <h1 class="who-h2">Who We Are</h1>
+                    <h2 class="who-h2">Who We Are</h2>
                     <div class="about-us-bar"></div>
                     <p class="who-p">
-                        We're a team of builders, engineers, and creatives focused on turning ideas into functional, scalable software.
-                        Whether it's guidance yous seek as a student or custom web platforms, mobile apps, or AI integrations. we deliver solutions through code. We guide students and professionals through real-world tech skills, we are both a learning hub and a development partner.
+                        We're a team of builders, engineers, and creatives focused on turning ideas into functional,
+                        scalable
+                        software.
+                        Whether it's guidance yous seek as a student or custom web platforms, mobile apps, or AI
+                        integrations. we
+                        deliver solutions through code. We guide students and professionals through real-world tech
+                        skills, we are
+                        both a learning hub and a development partner.
                     </p>
                     <p class="who-p who-p2">
-                        We solve hard problems by designing systems that are maintainable and measurable. From architecture and APIs to UX and deployment,
+                        We solve hard problems by designing systems that are maintainable and measurable. From
+                        architecture and APIs
+                        to UX and deployment,
                         we build production-ready products that help teams and users succeed.
                     </p>
                     <a href="index#contact-form" class="cta-button">Start a Project</a>
@@ -44,13 +53,31 @@
                     <img src="/images/image.png" alt="apps-and-dashboard-mockup">
                 </div>
             </section>
-            
-    </main>
 
-    <%- include('partials/footer') %>
+            <section class="vision-mission">
+                <div class="vision-container">
+                    <div class="vision-card">
+                        <div class="vision-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3 class="vision-h3">Vision</h3>
+                        <p class="vision-p">A digital community where learning and building go hand in hand.</p>
+                    </div>
+                    <div class="vision-card">
+                        <div class="vision-icon"><i class="fas fa-rocket"></i></div>
+                        <h3 class="vision-h3">Mission</h3>
+                        <p class="vision-p">To empower people with knowledge while delivering practical, high-quality
+                            tech
+                            solutions.</p>
+                    </div>
+                </div>
+            </section>
 
-    <script type="module" src="/js/footer.js"></script>
-    <script type="module" src="/js/main.js"></script>
+        </main>
+
+        <%- include('partials/footer') %>
+
+            <script type="module" src="/js/footer.js"></script>
+            <script type="module" src="/js/main.js"></script>
 
 </body>
+
 </html>
